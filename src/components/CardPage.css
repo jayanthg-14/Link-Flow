@@ -1,0 +1,125 @@
+#cardContainer{
+    /* border: 1px solid black; */
+    background-color: rgba(255, 255, 255, 0.675);
+    width: 500px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cardHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardDescription{
+    font-size: 18px;
+}
+
+#linksContainer{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    /* border: 1px solid black; */
+}
+
+.linkContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    /* border: 1px solid black; */
+
+}
+
+.linkContainer>span{
+    font-size: 20px;
+}
+
+.linkContainer>a{
+    font-size: 20px;
+}
+.linkContainer>input:hover{
+    border: 1px solid rgb(88, 88, 239);
+    box-shadow: 0px 2px 2px rgba(0, 0, 255, 0.448);
+}
+
+#cardTitle{
+    font-size: 30px;
+}
+
+
+#dashboardBtn{
+    border: none;
+    width:60%;
+    background-color: blueviolet;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 7px;
+    color: white;
+}
+
+#submitBtn{
+    cursor: pointer;
+}
+
+#userLogo{
+    width: 10%;
+    height: 10%;
+}
+
+#logoutBtn{
+    position: absolute;
+    left: 1000px;
+    top: 170px;
+    border: none;
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pathSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#clipboardCopyInput{
+    border: 1px lightgrey solid;
+    background-color: white;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#clipboardCopyInput:hover{
+    border: 1px solid rgb(88, 88, 239);
+    box-shadow: 0px 2px 2px rgba(0, 0, 255, 0.448);
+}
+
+
+
+#clipboardCopyBtn{
+    border: none;
+    width:30%;
+    background-color: blueviolet;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+
