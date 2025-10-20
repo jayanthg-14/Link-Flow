@@ -27,7 +27,7 @@ const CardPage = ()=>{
   // To get the full path including query parameters
 
     useEffect(()=>{
-            setPath("link-flow-rho.vercel.app/"+location.pathname);
+            setPath("link-flow-rho.vercel.app"+location.pathname);
     }, [])
 
     // console.log(fullPath);
