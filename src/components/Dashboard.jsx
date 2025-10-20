@@ -92,7 +92,7 @@ const Dashboard = () =>{
     return(
         <>
             <div id="dashboardContainer">
-                <button id="logoutBtn" onClick={logout}>Logout</button>
+                <button id="logoutBtnDashboard" onClick={logout}>Logout</button>
 
                 <img src={userImage} id="userLogo" alt="userimage" />
                 <span id="dashboardTitle">My Digital Links</span>
@@ -126,20 +126,6 @@ const Dashboard = () =>{
                         <input type="url" placeholder="Email Link" value={email} onChange={(e)=>{
                             setEmail(e.target.value);
                         }}/>            
-                    </div>
-
-                    <div className="linkContainerDashboard">
-                        <label>Medium:</label>
-                        <input type="url" placeholder="Medium Profile Link" value={medium} onChange={(e)=>{
-                            setMedium(e.target.value);
-                        }}/>
-                    </div>
-
-                    <div className="linkContainerDashboard">
-                        <label>Behance:</label>
-                        <input type="url" value={behance} placeholder="Behance Profile Link" onChange={(e)=>{
-                            setBehance(e.target.value);
-                        }}/>
                     </div>
 
                     <div className="linkContainerDashboard">

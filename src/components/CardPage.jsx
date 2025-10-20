@@ -77,7 +77,6 @@ const CardPage = ()=>{
         <>  
 
         <div id="cardContainer">
-            <button id="logoutBtn" onClick={logout}>Logout</button>
             <div id="cardHeader">
                 <span id="cardTitle">{data.userName} - Digital Card</span>
                 <span id="cardDescription">{data.description}</span>

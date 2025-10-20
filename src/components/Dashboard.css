@@ -83,11 +83,11 @@
 }
 
 #userLogo{
-    width: 10%;
+    width: 20%;
     height: 10%;
 }
 
-#logoutBtn{
+#logoutBtnDashboard{
     position: absolute;
     left: 1000px;
     top: 170px;
@@ -98,4 +98,110 @@
     height: 30px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+    #logoutBtnDashboard{
+        left: 700px;
+        top: 120px;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+}
+}
+
+@media (max-width: 900px) {
+
+    #logoutBtnDashboard{
+        left: 600px;
+        top: 120px;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+}
+}
+
+@media (max-width: 700px) {
+
+    #logoutBtnDashboard{
+        left: 470px;
+        top: 120px;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+}
+}
+
+@media (max-width: 500px) {
+
+    #logoutBtnDashboard{
+        left: 265px;
+        top: 15px;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+}
+
+#dashboardContainer{
+    /* border: 1px solid black; */
+    width: 300px;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dashboardTitle{
+    font-size: 20px;
+}
+
+#linksContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    /* border: 1px solid black; */
+}
+
+.linkContainerDashboard>label{
+    font-size: 15px;
+}
+
+.linkContainerDashboard>input{
+    border: 1px lightgrey solid;
+    background-color: white;
+    height: 25px;
+    width: 180px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.linkContainerDashboard>textarea{
+    border: 1px lightgrey solid;
+    background-color: white;
+    height: 60px;
+    width: 180px;
+    font-size: 12px;
+
+    border-radius: 5px;
+}
+
+#linkContainerTextArea{
+    align-items: start;
+    /* border: 1px solid black; */
+}
+
+#userLogo{
+    width: 20px;
+    height: 20px;
+}
+
+
+
 }
