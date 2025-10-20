@@ -142,8 +142,10 @@
 
 @media (max-width: 500px) {
     #logoutBtnDashboard{
-        left: 200px;
-        top: 120px;
+        margin-left: 100px;
+        position: fixed;
+        left: 600px;
+        top: 0px;
         width: 80px;
         height: 30px;
         border-radius: 5px;
