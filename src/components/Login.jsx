@@ -1,5 +1,5 @@
 import "./Login.css";
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { auth } from "../config/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -29,10 +29,6 @@ const Login = ()=>{
         }
     }
 
-    const navigateSignin= ()=>{
-        navigate("/");
-    }
-
     return(
         <>
 
@@ -56,7 +52,7 @@ const Login = ()=>{
                 </div>
 
                 <div id="linkSection">
-                    <span>Create new Account? <a href="" onClick={navigateSignin}>Signup</a> </span>
+                    <span>Create new Account? <Link to="/">Login</Link> </span>
                 </div>
 
 
