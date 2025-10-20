@@ -9,9 +9,9 @@ import Parent from './Parent.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/Link-Flow'>
+    <HashRouter basename='/Link-Flow'>
           <Parent></Parent>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 
     

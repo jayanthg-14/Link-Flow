@@ -9,10 +9,10 @@ const Parent = ()=>{
         <>
             <div id="parentContainer">
             <Routes>
-                <Route path="/" element={<Signin></Signin>}></Route>
-                <Route path="/login" element={<Login></Login>}></Route>
-                <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
-                <Route path="/card/:uniqueId" element={<CardPage></CardPage>}></Route>                
+                <Route path="#/" element={<Signin></Signin>}></Route>
+                <Route path="#/login" element={<Login></Login>}></Route>
+                <Route path="#/dashboard" element={<Dashboard></Dashboard>}></Route>
+                <Route path="#/card/:uniqueId" element={<CardPage></CardPage>}></Route>                
             </Routes>
             </div>
             

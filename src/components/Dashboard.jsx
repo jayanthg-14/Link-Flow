@@ -36,7 +36,7 @@ const Dashboard = () =>{
                 twitter: twitter,
                 description: description
             }, {merge:true})
-            navigate(`/card/${docRef.id}`)   ;
+            navigate(`#/card/${docRef.id}`)   ;
         }
         catch(err){
             console.log(err);
@@ -80,7 +80,7 @@ const Dashboard = () =>{
         try
         {
             await signOut(auth);
-            navigate("/login");
+            navigate("#/login");
 
         }
         catch(err)

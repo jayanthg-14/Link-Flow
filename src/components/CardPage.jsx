@@ -52,21 +52,10 @@ const CardPage = ()=>{
     },[uniqueId])
 
     const navigateDashboard = ()=>{
-        navigate("/dashboard");
+        navigate("#/dashboard");
     }
 
-    const logout = async()=>{
-            try
-            {
-                await signOut(auth);
-                navigate("/login");
-    
-            }
-            catch(err)
-            {
-                console.log(err);
-            }
-        }
+
 
       const copyToClipboard = () => {
     navigator.clipboard.writeText(fullPath)

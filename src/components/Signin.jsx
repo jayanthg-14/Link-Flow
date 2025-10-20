@@ -55,7 +55,7 @@ const Signin = ()=>{
                     <button id="signupBtn" onClick={authenticateSignin}>Signup</button>
                 </div>
                 <div id="linkSection">
-                    <span>  Already have an account? <Link to="/login">Login</Link></span>
+                    <span>  Already have an account? <Link to="#/login">Login</Link></span>
                 </div>
 
 
