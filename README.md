@@ -35,7 +35,7 @@ This project is ideal for anyone who wants to share their professional or person
 
 - Modern web browser.
 - Internet connection to access Firebase services.
-- Live project link: [https://link-flow-rho.vercel.app/](https://link-flow-rho.vercel.app/)
+- Live project link: [https://link-flow-rho.vercel.app/]
 
 ## Instructions for Use
 
