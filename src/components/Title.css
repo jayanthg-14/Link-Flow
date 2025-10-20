@@ -1,0 +1,22 @@
+#titleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#title{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#desc{
+
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}

@@ -91,8 +91,6 @@ const CardPage = ()=>{
                         ))}
             </div>
             <div id="pathSection"><input id="clipboardCopyInput" type="text" value={path}/><button id="clipboardCopyBtn"  onClick={copyToClipboard}>Copy to clipboard</button></div>
-            <button id="dashboardBtn" onClick={navigateDashboard}>Edit</button>
-
     
         </div>
  
