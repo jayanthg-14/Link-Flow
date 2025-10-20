@@ -1,7 +1,7 @@
 import "./Signup.css";
 
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 import { auth } from "../config/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -55,7 +55,7 @@ const Signin = ()=>{
                     <button id="signupBtn" onClick={authenticateSignin}>Signup</button>
                 </div>
                 <div id="linkSection">
-                    <span>Already have an account? <a href="" onClick={navigateLogin}>Login</a> </span>
+                    <span>  Already have an account? <Link to="/login">Login</Link></span>
                 </div>
 
 
