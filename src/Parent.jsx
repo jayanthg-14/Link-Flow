@@ -13,9 +13,6 @@
                     <Route path="/login" element={<Login></Login>}></Route>
                     <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
                     <Route path="/card/:uniqueId" element={<CardPage></CardPage>}></Route>                
-
-                    <Route path="*" element={<Navigate to="/" replace />} />
-
                 </Routes>
                 </div>
                 
