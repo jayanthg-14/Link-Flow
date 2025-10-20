@@ -8,8 +8,13 @@ import { HashRouter } from 'react-router-dom'
 import Parent from './Parent.jsx'
 
 createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <BrowserRouter basename='/Link-Flow'>
           <Parent></Parent>
     </BrowserRouter>
+
+  </StrictMode>
+
+    
 
 )
