@@ -11,5 +11,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+  if (!window.location.hash) {
+    window.location.replace(window.location.href + "#/");
+  }
+</script>
+
   </body>
 </html>
