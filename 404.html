@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <script>
-      // Get the current path (e.g., /about, /dashboard)
-      const currentPath = window.location.pathname.replace('/Link-Flow', '');
+      const base = '/Link-Flow';
+      const currentPath = window.location.pathname;
 
-      // Redirect to index.html and append the original path to preserve routing
-      window.location.replace('/Link-Flow/index.html' + currentPath);
+      // If already on index.html, do NOT redirect again
+      if (!currentPath.includes('/index.html')) {
+        const newUrl = base + '/index.html' + currentPath.replace(base, '');
+        window.location.replace(newUrl);
+      }
     </script>
   </head>
   <body></body>
