@@ -1,11 +1,18 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <script>
-      const path = window.location.pathname.replace('/Link-Flow', '');
-      window.location.replace('/Link-Flow/index.html' + path);
+      (function () {
+        // Check if the current URL is already the root
+        if (window.location.pathname === "/Link-Flow/") {
+          return;
+        }
+
+        // Construct the new URL by appending the current path to index.html
+        const newUrl = window.location.origin + "/Link-Flow/index.html" + window.location.pathname;
+        window.location.replace(newUrl);
+      })();
     </script>
   </head>
   <body></body>
