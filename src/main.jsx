@@ -8,9 +8,8 @@ import { HashRouter } from 'react-router-dom'
 import Parent from './Parent.jsx'
 
 createRoot(document.getElementById('root')).render(
-
-  <HashRouter basename='/Link-Flow'>
-      <Parent></Parent>
-  </HashRouter>    
+    <BrowserRouter basename='/Link-Flow'>
+          <Parent></Parent>
+    </BrowserRouter>
 
 )
