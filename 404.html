@@ -1,16 +1,11 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <script>
-      const base = '/Link-Flow';
-      const currentPath = window.location.pathname;
-
-      // If already on index.html, do NOT redirect again
-      if (!currentPath.includes('/index.html')) {
-        const newUrl = base + '/index.html' + currentPath.replace(base, '');
-        window.location.replace(newUrl);
-      }
+      // Get the current path after /Link-Flow
+      const path = window.location.pathname.replace('/Link-Flow', '');
+      // Redirect to index.html while keeping the path
+      window.location.replace('/Link-Flow/index.html' + path);
     </script>
   </head>
   <body></body>
