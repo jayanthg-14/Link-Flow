@@ -8,7 +8,7 @@ import Parent from './Parent.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/Link-Flow'>
+    <BrowserRouter>
           <Parent></Parent>
     </BrowserRouter>
   </StrictMode>
