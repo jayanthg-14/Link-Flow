@@ -21,7 +21,7 @@ import {signOut} from "firebase/auth";
 
 
 const CardPage = ()=>{
-    const iconCollection = {"linkedin":faLinkedin , "email":faEnvelope , "behance": faSquareBehance, "github": faSquareGithub, "instagram": faSquareInstagram, "medium": faMedium , "twitter" : faSquareTwitter }
+    const iconCollection = {"linkedin":faLinkedin , "email":faEnvelope , "github": faSquareGithub, "instagram": faSquareInstagram, "twitter" : faSquareTwitter }
     const location = useLocation();
     const [path, setPath] = useState("");
   // To get the full path including query parameters
@@ -56,12 +56,6 @@ const CardPage = ()=>{
     useEffect(()=>{
         docData();
     },[uniqueId])
-
-
-    const navigateDashboard = ()=>{
-        navigate("/dashboard");
-    }
-
 
 
       const copyToClipboard = () => {

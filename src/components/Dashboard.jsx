@@ -14,8 +14,6 @@ const Dashboard = () =>{
     const [description, setDescription] = useState("");
     const [linkedin, setLinkedin] = useState("");
     const [email, setEmail] = useState("");
-    const [medium, setMedium] = useState("");
-    const [behance, setBehance] = useState("");
     const [github, setGithub] = useState("");
     const [instagram, setInstagram] = useState("");
     const [twitter, setTwitter] = useState("");
@@ -29,8 +27,6 @@ const Dashboard = () =>{
                 userId: auth.currentUser.uid,
                 linkedin: linkedin,
                 email: email,
-                medium: medium,
-                behance: behance,
                 github: github,
                 instagram: instagram,
                 twitter: twitter,
@@ -68,8 +64,6 @@ const Dashboard = () =>{
         setDescription(presentData.description)
         setLinkedin(presentData.linkedin);
         setEmail(presentData.email);
-        setMedium(presentData.medium);
-        setBehance(presentData.behance);
         setGithub(presentData.github);
         setInstagram(presentData.instagram);
         setTwitter(presentData.twitter);
