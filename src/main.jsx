@@ -7,13 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Parent from './Parent.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    {/* <App /> */}
-    {/* <Signin></Signin> */}
-    {/* <Login></Login> */}
-    {/* <Dashboard></Dashboard> */}
     <BrowserRouter basename='/Link-Flow'>
       <Parent></Parent>
     </BrowserRouter>
-  </StrictMode>,
 )
