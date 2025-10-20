@@ -31,7 +31,7 @@ const Signin = ()=>{
     }
 
     const navigateLogin=()=>{
-        navigate("/login");
+        navigate("/Login");
     }
 
 
