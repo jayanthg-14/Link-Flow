@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <script>
       // Get the current path (e.g., /about, /dashboard)
-      var redirectPath = window.location.pathname.replace('/Link-Flow', '');
-      // Redirect to index.html but keep the original path in hash
-      window.location.replace('/Link-Flow/index.html' + path);
+      const currentPath = window.location.pathname.replace('/Link-Flow', '');
+
+      // Redirect to index.html and append the original path to preserve routing
+      window.location.replace('/Link-Flow/index.html' + currentPath);
     </script>
   </head>
   <body></body>
