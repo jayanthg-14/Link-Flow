@@ -1,8 +1,8 @@
 import {Routes, Route} from "react-router-dom";
-import Signin from "./Signin";
-import Login  from "./Login";
-import Dashboard from "./Dashboard";
-import CardPage from "./CardPage";
+import Signin from "./components/Signin";
+import Login  from "./components/Login";
+import Dashboard from "./components/Dashboard";
+import CardPage from "./components/CardPage";
 import "./Parent.css"
 const Parent = ()=>{
     return(
