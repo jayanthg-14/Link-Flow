@@ -23,8 +23,14 @@ import {signOut} from "firebase/auth";
 const CardPage = ()=>{
     const iconCollection = {"linkedin":faLinkedin , "email":faEnvelope , "behance": faSquareBehance, "github": faSquareGithub, "instagram": faSquareInstagram, "medium": faMedium , "twitter" : faSquareTwitter }
     const location = useLocation();
+    const [path, setPath] = useState("");
   // To get the full path including query parameters
-    const fullPath = location.pathname + location.search;
+
+    useEffect(()=>{
+            setPath("link-flow-rho.vercel.app/"+location.pathname);
+    }, [])
+
+    // console.log(fullPath);
     
     const navigate = useNavigate();
     const {uniqueId} = useParams();
@@ -51,6 +57,7 @@ const CardPage = ()=>{
         docData();
     },[uniqueId])
 
+
     const navigateDashboard = ()=>{
         navigate("/dashboard");
     }
@@ -58,8 +65,8 @@ const CardPage = ()=>{
 
 
       const copyToClipboard = () => {
-    navigator.clipboard.writeText(fullPath)
-      .then(() => alert("Copied: " + fullPath))
+    navigator.clipboard.writeText(path)
+      .then(() => alert("Copied: " + path))
       .catch((err) => console.error("Failed to copy: ", err));};
 
     return(
@@ -83,7 +90,7 @@ const CardPage = ()=>{
                 </div>
                         ))}
             </div>
-            <div id="pathSection"><input id="clipboardCopyInput" type="text" value={fullPath}/><button id="clipboardCopyBtn"  onClick={copyToClipboard}>Copy to clipboard</button></div>
+            <div id="pathSection"><input id="clipboardCopyInput" type="text" value={path}/><button id="clipboardCopyBtn"  onClick={copyToClipboard}>Copy to clipboard</button></div>
             <button id="dashboardBtn" onClick={navigateDashboard}>Edit</button>
 
     
