@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Signin></Signin> */}
     {/* <Login></Login> */}
     {/* <Dashboard></Dashboard> */}
-    <BrowserRouter>
+    <BrowserRouter basename='/Link-Flow'>
       <Parent></Parent>
     </BrowserRouter>
   </StrictMode>,
