@@ -31,7 +31,7 @@ const Signin = ()=>{
     }
 
     const navigateLogin=()=>{
-        navigate("/Link-Flow/login");
+        navigate("/login");
     }
 
 
