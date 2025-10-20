@@ -52,7 +52,7 @@ const Login = ()=>{
                 </div>
 
                 <div id="linkSection">
-                    <span>Create new Account? <Link to="/">Login</Link> </span>
+                    <span>Create new Account? <Link to="/">Signup</Link> </span>
                 </div>
 
 
