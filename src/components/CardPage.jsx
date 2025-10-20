@@ -52,7 +52,7 @@ const CardPage = ()=>{
     },[uniqueId])
 
     const navigateDashboard = ()=>{
-        navigate("#/dashboard");
+        navigate("/dashboard");
     }
 
 

@@ -1,22 +1,25 @@
-import {Routes, Route} from "react-router-dom";
-import Signin from "./components/Signin";
-import Login  from "./components/Login";
-import Dashboard from "./components/Dashboard";
-import CardPage from "./components/CardPage";
-import "./Parent.css"
-const Parent = ()=>{
-    return(
-        <>
-            <div id="parentContainer">
-            <Routes>
-                <Route path="#/" element={<Signin></Signin>}></Route>
-                <Route path="#/login" element={<Login></Login>}></Route>
-                <Route path="#/dashboard" element={<Dashboard></Dashboard>}></Route>
-                <Route path="#/card/:uniqueId" element={<CardPage></CardPage>}></Route>                
-            </Routes>
-            </div>
-            
-        </>
-    )
-}
-export default Parent;
+    import {Routes, Route} from "react-router-dom";
+    import Signin from "./components/Signin";
+    import Login  from "./components/Login";
+    import Dashboard from "./components/Dashboard";
+    import CardPage from "./components/CardPage";
+    import "./Parent.css"
+    const Parent = ()=>{
+        return(
+            <>
+                <div id="parentContainer">
+                <Routes>
+                    <Route path="/" element={<Signin></Signin>}></Route>
+                    <Route path="/login" element={<Login></Login>}></Route>
+                    <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+                    <Route path="/card/:uniqueId" element={<CardPage></CardPage>}></Route>                
+
+                    <Route path="*" element={<Navigate to="/" replace />} />
+
+                </Routes>
+                </div>
+                
+            </>
+        )
+    }
+    export default Parent;
